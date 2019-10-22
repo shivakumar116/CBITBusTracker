@@ -1,0 +1,59 @@
+<ion-header>
+
+</ion-header>
+
+<ion-content>
+  <div class="body">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!-- <ion-item color="transparent" style="margin-left: auto;
+    margin-right: auto;
+    width : 70%;
+    display : block;
+    ">
+      <ion-label position="stacked" style="font-size: 25px;margin-bottom: 10px;font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: bold;color: white">Enter Bus
+        Number</ion-label>
+      <ion-input type="number" [(ngModel)]="ubusno" style="color : white"></ion-input>
+    </ion-item>
+    <br>
+    <ion-button (click)="saveubusno()" style="
+    border-radius: 100%;
+    padding: 5px;
+    text-align: center;
+    widows: 12px;
+    height: 50px;
+    display: inline-block;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    width : 70%;
+    display : block;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    ">Start Tracking Bus</ion-button>-->
+
+    <ion-item color="transparent" style="margin-left: auto;
+    margin-right: auto;
+    width : 70%;
+    display : block;
+    ">
+      <ion-label style="color : white;font-family: Georgia, 'Times New Roman', Times, serif
+      ;font-weight: bold">Select Bus Number</ion-label>
+      <ion-select [(ngModel)]="busno" (ngModelChange)="selectedbus()" ok-text="Track Bus" cancel-text="Cancel">
+        <ion-select-option *ngFor="let busno of busesol" [value]="busno">{{busno}}</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+  </div>
+
+</ion-content>

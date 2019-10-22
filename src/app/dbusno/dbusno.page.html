@@ -1,0 +1,56 @@
+<ion-header>
+
+</ion-header>
+
+<ion-content>
+  <div class="body">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <ion-item color="transparent" style="margin-left: auto;
+    margin-right: auto;
+    width : 70%;
+    display : block;
+    ">
+      <ion-label position="stacked" style="font-size: 23px;margin-bottom: 10px;font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: bold;color: white">Enter Bus
+        Number</ion-label>
+      <ion-input type="number" [(ngModel)]="dbusno" style="color: white"></ion-input>
+    </ion-item>
+
+    <ion-item color="transparent" style="margin-left: auto;
+    margin-right: auto;
+    width : 70%;
+    display : block;
+    ">
+      <ion-label position="stacked" style="font-size: 23px;margin-bottom: 10px;font-family: Georgia, 'Times New Roman', Times, serif;
+        color : white;font-weight: bold">Driver
+        access key</ion-label>
+      <ion-input type="number" [(ngModel)]="authkey" style="color: white"></ion-input>
+    </ion-item>
+    <br>
+    <ion-button (click)="savedbusno()" size="medium" color="primary" style="
+    border-radius: 100%;
+    padding: 5px;
+    text-align: center;
+    widows: 12px;
+    height: 50px;
+    display: inline-block;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    display: block;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    ">
+      Submit</ion-button>
+  </div>
+</ion-content>
